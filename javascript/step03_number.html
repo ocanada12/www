@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>step03_number.html</title>
+    <script>
+        /*
+        number type
+        1. 원하는 숫자를 쓰거나 흑인 산술 연산자의 결과로 만들어진다.
+        2. 산술연산이 가능하다.
+        3. 세부적으로는 정수형과 실수형으로 분류
+        */
+        let num1 = 10;
+        let num2 = 20.1;
+        
+        let result = num1 + num2;
+        console.log(result);
+        console.log(typeof result);
+        console.log(parseInt("abc"));
+        
+        console.log(parseInt("3.1"));
+        console.log(parseFloat("3.1"));
+
+        result = (+"3.1") +4;
+        console.log(result);
+
+        
+        result = parseFloat("3.1") + 4;
+        console.log(result);
+
+        result = 45/0; // infinity
+        console.log(result);
+
+        result = 0/0;
+        console.log(result+100);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

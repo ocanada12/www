@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        li{
+            background-color: yellow;/*가중치 1점*/ 
+        }
+        ul li{
+            background-color: red; /*2점*/
+        }
+        .active{
+            background-color: pink; /*10점(클래스)*/
+        }
+        li.active{
+            background-color: violet;/*11점*/
+        }
+        #one{
+            background-color: brown;/*100점(아이디)*/
+        }
+        #one{
+            background-color: aquamarine !important;/*100점(아이디)*/ /*10100점(임포턴트)*/
+        }
+
+    </style>
+    <title>step10_weight.html</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <ul>
+                <li class="active" id="one" style="background-color: fuchsia;">하나</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

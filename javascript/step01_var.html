@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>step01_var.html</title>
+    <script>
+    //한줄주석
+    /*
+    여러줄 주석
+    */
+    var num1 = 1000;
+    var num1 = 1000; // var는 이중선언이 가능하다.
+                    // 기업에서 손코딩을 시키는 이유: 완전하게 알고 있는지 판단하기 위해서
+
+    // 문자열 선언
+    var yourName = "조국";
+    var ourName = '조국을 사랑합니다.';
+    var myName = `태산이
+    높다하되
+    하늘아래 
+    뫼이로다`;
+    
+    console.log(num1);
+    console.log(yourName);
+    console.log(ourName);
+    console.log(myName);
+    console.log(name2 === undefined); // 두개짜리는 값만 비교하고 세개 짜리는 자료형까지 비교함
+    var name2 = "test"; // 변수 호이스팅 변수를 맨위로 올라가서 선언만하고 쓰지 않음
+    
+    
+    foo();
+    function foo(){
+        console.log('function - foo');// 함수 호이스팅 위로 올라감
+    }
+    
+    var baz = function(){
+        console.log('function - baz'); // 함수 호이스팅 안됨.
+    }
+    baz();
+    
+    let a1 = 1000;
+    // let a1 = 2000;
+    console.log(a1); // let 이중선언 불가능 
+
+    let a2 = 2000; // 변수가 위로 안올라감, 호스팅이 안됨
+    console.log(a2); 
+    
+    var b1 = 100;
+    console.log(b1);
+    if(true){
+        var b1 = 200;
+        console.log(b1); // 바변수는 블록 개념이 없음.
+    }
+    console.log(b1);
+
+    let c1 = 100;
+    console.log(c1);
+    if(true){
+        let c1 = 200;
+        console.log(c1); // 스코프가 다른 영역에서 이중선언은 되지만 다름.
+    }
+    console.log(c1);
+
+    const d1 = 10; // 콘스트 변수는 한번 선언하면 끝임(상수화). 자바 파이날 변수와 비슷
+
+    const e1 = [1,2,3]; // 레퍼런스 할당할떄 사용?
+    e1.push(4);
+    console.log(e1); // let은 변수선언, const는 레퍼런스 할당할때 쓰자
+    
+    // 자바 스크립트 세미콜론 안넣어도 됨
+    // 원시형에서는 렛변수 원시형에서 상수로 사용할것은 콘스트 변수로 참조형도 콘스트로
+    
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

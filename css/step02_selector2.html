@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+       .container~p{
+           background-color: bisque;
+       }
+       /*
+       .container p => .container의 자손중에서 p요소 선택
+       .container > p => .container의 자식중에서 p요소 선택
+       .container + p => .container의 인접 형제중에서 p요소 선택
+       .container ~ p => .container의 형제중에서 p요소 선택
+       
+       */
+    </style>
+    <title>step02_selector2.html</title>
+</head>
+<body>
+    <div class="container">
+        <p>more recently with desktop.자식</p>
+        <div>
+            <p>more recently with desktop.자손</p>
+        </div>
+        <p>more recently with desktop.자식</p>
+    </div>
+    <p>more recently with desktop.인접.형제</p>
+    <p>more recently with desktop.형제</p>
+    <p>more recently with desktop.형제6</p>
+    <p>more recently with desktop.형제7</p>
+    <p>more recently with desktop.형제8</p>
+</body>
+</html>
